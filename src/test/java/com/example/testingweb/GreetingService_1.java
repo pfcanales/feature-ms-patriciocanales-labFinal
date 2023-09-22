@@ -19,7 +19,7 @@ import org.springframework.test.web.servlet.MockMvc;
 //@WebMvcTest(GreetingController.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class GreetingService1 {
+public class GreetingService_1 {
 
 	@Autowired
 	private MockMvc mockMvc;
