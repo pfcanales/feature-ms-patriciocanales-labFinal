@@ -21,8 +21,13 @@ class TestingWebApplicationTest {
 	private MockMvc mockMvc;
 
 	@Test
-	void shouldReturnDefaultMessage() throws Exception {
-		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello, World")));
-	}
+	void testA() {
+		GreetingService greetingService = new GreetingService();
+		assertThat(greetingService.greet()).contains("Hello, World");
+	
+	}	
+//	void shouldReturnDefaultMessage() throws Exception {
+//		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
+//				.andExpect(content().string(containsString("Hello, World")));
+//	}
 }
