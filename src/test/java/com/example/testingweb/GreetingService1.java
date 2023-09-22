@@ -15,7 +15,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 @WebMvcTest(GreetingController.class)
-public class GreetingService {
+public class GreetingService1 {
 
 	@Autowired
 	private MockMvc mockMvc;
