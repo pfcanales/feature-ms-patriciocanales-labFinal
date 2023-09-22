@@ -28,7 +28,7 @@ public class GreetingServiceA {
 	private GreetingService service;
 
 	@Test
-	public void shouldReturnDefaultMessage() throws Exception {
+	void shouldReturnDefaultMessage() throws Exception {
 		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Hello, World")));
 	}
